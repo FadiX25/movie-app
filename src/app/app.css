@@ -1,0 +1,36 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.topbar {
+  align-items: center;
+  background: #ffe000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem clamp(1rem, 5vw, 4rem);
+}
+
+.brand,
+.wishlist-link {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand {
+  font-size: 1.4rem;
+}
+
+.wishlist-link {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+main {
+  background: #000;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem 1rem 4rem;
+}

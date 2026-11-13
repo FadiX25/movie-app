@@ -1,0 +1,117 @@
+{
+  "info": {
+    "_postman_id": "f1b1c7d4-0f47-4ec1-9cb9-2dc3a6a8f4d0",
+    "name": "TMDB Movie API",
+    "description": "Requests used by the Movie App to access The Movie Database API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "apiKey",
+      "value": "YOUR_TMDB_API_KEY",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Now playing",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/movie/now_playing?api_key={{apiKey}}&language=fr-FR",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "movie",
+            "now_playing"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "{{apiKey}}"
+            },
+            {
+              "key": "language",
+              "value": "fr-FR"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search movies",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/search/movie?api_key={{apiKey}}&language=fr-FR&query=Inception",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "search",
+            "movie"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "{{apiKey}}"
+            },
+            {
+              "key": "language",
+              "value": "fr-FR"
+            },
+            {
+              "key": "query",
+              "value": "Inception"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Movie details",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/movie/550?api_key={{apiKey}}&language=fr-FR",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "movie",
+            "550"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "{{apiKey}}"
+            },
+            {
+              "key": "language",
+              "value": "fr-FR"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
